@@ -1,0 +1,12 @@
+<p>template-driven-forms works!</p>
+<form #simpleForm="ngForm" (ngSubmit)="saveData(simpleForm.value)">
+<input type="text" name="Firstname" ngModel placeholder="Enter firstname"><br>
+<input type="text" name="Lastname" ngModel placeholder="Enter lastname"><br>
+<input type="text" name="DOB" ngModel placeholder="Enter DOB"><br>
+<input type="text" name="Age" ngModel placeholder="Enter Age"><br>
+<input type="text" name="Gender" ngModel placeholder="Enter gender"><br>
+<input type="text" name="Phone" ngModel placeholder="Enter phone"><br>
+<input type="text" name="Email" ngModel placeholder="Enter email"><br>
+<input type="password" name="password" ngModel placeholder="Enter password"><br>
+<button>SAVE</button>
+</form>

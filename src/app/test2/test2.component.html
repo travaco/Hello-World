@@ -1,0 +1,22 @@
+<h1>test2 *ngIf works</h1>
+<div #vaco style="background-color: blue;" *ngIf = "show">
+    <p>The event binding listens for the button's click events and calls the component's onSave() method whenever a click occurs.</p>
+    </div>
+    <button #ddd (click)="display()">Show</button>
+
+
+  <!-- //********//ng statement visible with conditional value only !-->
+  <p *ngIf="show2 else elseblock1">The event binding listens for skssksksksk wwwwvents and calls the component's </p>
+
+<ng-template #elseblock1>
+<p>else block1 ng-template</p>
+</ng-template>
+
+<!--Example 2 for ng-template with *ngIf if then else -->  
+<h1 *ngIf="dispy =='yes'; then ifblock2 else elseblock2"> *ngIf condition in Angular</h1>
+<ng-template #ifblock2>
+  <p>if block2</p>
+  </ng-template>
+  <ng-template #elseblock2>
+  <p>else block 2</p>
+  </ng-template>

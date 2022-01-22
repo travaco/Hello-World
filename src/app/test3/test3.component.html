@@ -1,0 +1,28 @@
+<h1>test3 @ngIF statement works</h1>
+<ul *ngFor= "let person of people">
+ <li *ngIf= "person.age <= 35">
+  {{person.name}} ({{person.age}})
+</li>
+</ul> 
+
+<!--Table format -->
+
+<table border="1px">
+  <tr>
+   <td>Name</td><td>Age</td>
+  </tr>
+  <tr *ngFor= "let person of people">
+    <td>{{person.name}}</td>
+    <td>{{person.age}} </td>
+  </tr>
+</table>
+
+
+<h1>test3 ngSwitchCase works</h1>
+<div [ngSwitch] = "color">
+    <p style="background-color: red;" *ngSwitchCase = "'red'">This snapshot of Anna Beele's life was captured by the 1940 U.S. Census. click occurs.</p>
+    <p style="background-color: blue;" *ngSwitchCase = "'blue'">This snapshot of Anna Beele's life was captured by the 1940 U.S. Census. click occurs.</p>
+    <p style="background-color: green;" *ngSwitchCase = "'green'">This snapshot of Anna Beele's life was captured by the 1940 U.S. Census. click occurs.</p>
+    <p *ngSwitchDefault>Default statement: This snapshot of Anna Beele's life was captured by the 1940 U.S. Census. click occurs.</p>
+</div>
+

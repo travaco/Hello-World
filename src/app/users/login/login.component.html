@@ -1,0 +1,19 @@
+<p>login page here!</p>
+<label name="username">Username</label>
+<input type="text" id="username"  [disabled]="disabledBox1" value="travaco"/><button (click)='enableBox1()'>Enable Texbox1</button>
+<br>
+<label name="password">Password</label>
+<input [type]= "showpwd" id="pasword" [disabled]="disabledBox2" value="Sidra11*"/><button (click)='showPassword()'>Show</button>
+<br>
+<button (click)='enableBox2()'>Enable Texbox2</button>
+
+<br><br>
+//keyup event
+<input type="text" #username (keydown)="myEvent2(username.value)"/>
+<div #val style="background-color: blue ;" (mouseover) ="myEvent2('mouseover event')">
+<p #xyx>The event binding listens for the button's click events and calls the component's onSave() method whenever a click occurs.</p>
+</div>
+
+<div #val style="background-color: greenyellow ;" (mouseleave) ="myEvent2('mouseleave event')">
+    <p #xyx>The event binding listens for the button's click events and calls the component's onSave() method whenever a click occurs.</p>
+    </div>

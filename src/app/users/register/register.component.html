@@ -1,0 +1,24 @@
+<p>register page here!</p>
+<div #val style="background-color: greenyellow ;">
+    <p #xyx>Please fill up the box and enter your details in to register.</p>
+    <label>Firstname</label>
+    <input type="text" #firstname (keyup.enter)="getVal(firstname.value)" />
+    <br><br> 
+    <label>Lastname</label>
+    <input type="text" #lastname (keyup)="getValPrint(lastname.value)" />
+    <button>Enter</button>
+</div>
+<br>
+<div #see>
+<p>Hi there &nbsp;{{showValue}} </p>
+</div>
+
+<div #val style="background-color: yellow;">
+    <label>DOB</label>
+    <input type="text" #dob  />
+    <button (click)="getValPrint2(dob.value)">Enter</button>
+</div>
+<br>
+<div #see>
+<p>{{showValue2}} </p>
+</div>
