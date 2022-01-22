@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
 import 'hammerjs';
 
 
@@ -32,7 +32,7 @@ import 'hammerjs';
     UsersModule,
     FormsModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MatButtonModule
     
   ],
   providers: [],
