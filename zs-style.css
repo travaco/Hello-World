@@ -1,11 +1,16 @@
 body {
-    background-color: powderblue;
+    background-color: white;
+    font-size: 20px;
+    font-weight: normal;
+    color: green; 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
   }
-   p {
+
+ p {
     color: red;
   }
 
 h1{
     font-weight: 700;
-    color: forestgreen;
+    color: greenyellow;
 }
