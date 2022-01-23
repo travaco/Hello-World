@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import 'hammerjs';
+import { CreateEmployeeComponent } from './employees/create-employee/create-employee.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import 'hammerjs';
     TemplateDrivenFormsComponent,
     HeaderComponent,
     FooterComponent,
+    CreateEmployeeComponent,
     ],
   imports: [
     BrowserModule,
