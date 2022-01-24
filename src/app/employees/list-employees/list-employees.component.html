@@ -1,5 +1,12 @@
-<p>Parent component list-employees works!</p>
-<div *ngFor = "let employee of list-employees">
-    <app-display-employee [employee]="employee"></app-display-employee>
-</div>
-
+<p>list-employees works!</p>
+<table border="1px">
+    <tr>
+     <td>Id</td><td>Title</td><td>UserId</td><td>Completed</td>
+    </tr>
+    <tr *ngFor= "let item of data">
+          <td>{{item.id}} </td> 
+          <td>{{item.title}} </td>
+          <td>{{item.userId}} </td>
+          <td>{{item.completed}} </td>
+     </tr>
+  </table>

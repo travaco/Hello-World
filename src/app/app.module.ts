@@ -14,7 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import 'hammerjs';
+import { ListEmployeesComponent } from './employees/list-employees/list-employees.component';
+import { DisplayEmployeeComponent } from './employees/display-employee/display-employee.component';
 import { CreateEmployeeComponent } from './employees/create-employee/create-employee.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,6 +29,8 @@ import { CreateEmployeeComponent } from './employees/create-employee/create-empl
     TemplateDrivenFormsComponent,
     HeaderComponent,
     FooterComponent,
+    ListEmployeesComponent,
+    DisplayEmployeeComponent,
     CreateEmployeeComponent,
     ],
   imports: [
@@ -34,7 +39,8 @@ import { CreateEmployeeComponent } from './employees/create-employee/create-empl
     UsersModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    HttpClientModule
     
   ],
   providers: [],

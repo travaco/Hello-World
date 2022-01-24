@@ -9,7 +9,7 @@ import { Department } from '../../models/department.model';
 })
 export class DisplayEmployeeComponent implements OnInit {
 
-  @Input() employee: Employee;
+  //@Input() employee: Employee;
   constructor() { }
 
   ngOnInit(): void {

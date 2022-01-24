@@ -1,8 +1,21 @@
 import { Injectable } from "@angular/core";
 import { Employee } from '../models/employee.model';
+import { HttpClient } from '@angular/common/http';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
+
 export class EmployeeService {
+
+  constructor(private http: HttpClient){
+   }
+
+   getData() {
+    let url='https://jsonplaceholder.typicode.com/todos/';  
+    return this.http.get(url);   
+ }   
+
   private listEmployees: Employee[] = [
     {
         id: 1,
