@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Employee } from '../../models/employee.model';
-import { Department } from '../../models/department.model';
+import { UserComponent } from 'src/app/users/user/user.component';
+import { UsersService } from '../../Services/users.service';
 
 @Component({
   selector: 'app-display-employee',
@@ -10,9 +10,13 @@ import { Department } from '../../models/department.model';
 export class DisplayEmployeeComponent implements OnInit {
 
   //@Input() employee: Employee;
-  constructor() { }
+  emp: any;
+  constructor(private _users: UsersService ) {}
 
   ngOnInit(): void {
+     this._users.getUsers().subscribe(data => {
+       this.emp = data;
+    })
   }
 
 }

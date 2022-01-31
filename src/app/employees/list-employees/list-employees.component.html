@@ -1,12 +1,46 @@
 <p>list-employees works!</p>
+<!--Example:1 
 <table border="1px">
     <tr>
      <td>Id</td><td>Title</td><td>UserId</td><td>Completed</td>
+     <td>Email</td> <td>DOB:</td><td>Department</td><td>isActive</td><td>Photo</td>
     </tr>
     <tr *ngFor= "let item of data">
           <td>{{item.id}} </td> 
           <td>{{item.title}} </td>
           <td>{{item.userId}} </td>
           <td>{{item.completed}} </td>
-     </tr>
+     </tr> 
+     </table>-->
+
+    Example:2 
+    <table border="1px">
+    <tr>
+     <td>Id</td><td>Name</td><td>Gender</td><td>Phone</td>
+     <td>Email</td> <td>DOB:</td><td>Department</td><td>isActive</td><td>Photo</td>
+    </tr>
+       <tr *ngFor= "let item of emp">
+          <td>{{item.id}} </td> 
+          <td>{{item.name}} </td>
+          <td>{{item.gender}} </td>
+          <td>{{item.phone}} </td>
+          <td>{{item.email}} </td>
+          <td>{{item.dob | date}} </td>
+          <td>{{item.department}} </td>
+          <td>{{item.isActive}} </td>
+         <td><img class="img" src={{item.photoPath}} alt= "picture" /></td>
+     </tr> 
   </table>
+
+  <!-- Example: 3
+  <table border="1px">
+    <tr>
+     <td>Id</td><td>Media</td>
+    </tr>
+   <tr *ngFor= "let item of user">
+          <td>{{item.userId}} </td> 
+          <td>{{item.media}} </td>
+    </tr> 
+  </table>
+  <p>{{user | json}} </p> -->
+  
