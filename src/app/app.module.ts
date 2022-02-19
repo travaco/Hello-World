@@ -11,7 +11,11 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import 'hammerjs';
 import { ListEmployeesComponent } from './employees/list-employees/list-employees.component';
 import { DisplayEmployeeComponent } from './employees/display-employee/display-employee.component';
@@ -38,6 +42,10 @@ import { HttpClientModule } from '@angular/common/http';
     UsersModule,
     FormsModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatSlideToggleModule,
+    MatIconModule,
     MatButtonModule,
     HttpClientModule
     

@@ -8,14 +8,17 @@ import { discardPeriodicTasks } from '@angular/core/testing';
 })
 export class AppComponent {
   
-  //Property
+  //String Property
   title = 'travaco.com';
   name = 'Zaheer Shaikh'
-
+  isDarkTheme = true;
+  
+  //Numeric property
   a = 10;
   b = 15;
   c = 0;
-  //Function
+  
+ //Function
  getName()
  {
    return this.name;
@@ -32,5 +35,9 @@ export class AppComponent {
   arr=['Tom','Dick','Harry'];
 
   naam = 'Zach';
+
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+   }
 
 }
