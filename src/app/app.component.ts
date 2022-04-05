@@ -36,8 +36,5 @@ export class AppComponent {
 
   naam = 'Zach';
 
-  toggleTheme() {
-    this.isDarkTheme = !this.isDarkTheme;
-   }
-
+  
 }

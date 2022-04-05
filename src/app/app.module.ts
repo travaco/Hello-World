@@ -7,7 +7,6 @@ import {UsersModule} from './users/users.module';
 import { Test2Component } from './test2/test2.component';
 import { Test3Component } from './test3/test3.component';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
-import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +20,7 @@ import { ListEmployeesComponent } from './employees/list-employees/list-employee
 import { DisplayEmployeeComponent } from './employees/display-employee/display-employee.component';
 import { CreateEmployeeComponent } from './employees/create-employee/create-employee.component';
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 
 @NgModule({
@@ -40,14 +40,15 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     UsersModule,
-    FormsModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
     MatSlideToggleModule,
     MatIconModule,
     MatButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],
